@@ -1,0 +1,74 @@
+body {
+    background-color:#E0EDC5;
+    color: #57001A;  
+    font-family: calibri;
+    font-size: 1rem;
+    line-height: 1,5;
+    margin: 0;
+}
+
+.heading {
+    padding: 70px 20px;
+    background-image: url(obrazky/foto_hlavicka.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 4rem;
+    text-align: left;
+    color: rgba(210, 207, 0, 0.801);
+    padding: 20px 10%;
+}
+
+h2 {
+    font-style: italic;
+    text-align: left;
+    font-size: 2rem;
+    color: #D2CE00;
+    padding: 20px 15%; 
+}
+
+.visitcard {
+    padding: 50px 10%;
+}
+
+.travels img {
+    height: 150px;
+    border: 1px solid brown;
+    border-radius: 5px;
+    margin: 0 5px 0 5px;
+    }
+
+.hobbies img {
+    height: 140px;
+    border: 1px solid brown;
+    border-radius: 5px;
+    margin: 0 5px 0 5px;
+}
+
+.contact {
+    background-color: #6C000A;
+    color: white;
+    text-align: left;
+    padding: 40px 10%;
+}
+
+.contact img {
+    float: right;
+    height: 100px;
+    padding: 0 180px; 
+    border-radius: 50%;
+    }
+
+.footing {
+    background-image: url(obrazky/foto_paticka.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    color: rgba(210, 207, 0, 0.801);
+    text-align: left;
+    padding: 8px 0 8px 10%;
+}
