@@ -1,0 +1,126 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+ BARVY
+ sede pozadi      #e5e5e5
+ svetle fialova   #48418e
+ tmave fialova    #25133d
+
+ POUZITE PISMO
+ Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+ https://fonts.google.com/specimen/Roboto
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e5e5e5;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.obal {
+    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+    margin: 0 auto; /* pruh je na stránce vycentrovaný */
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- zde začni psát vlastní CSS ----- */
+
+
+.hlavicka p {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hlavicka a{
+    text-decoration: none;
+    color: black;
+}
+
+.hlavicka {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16rem 0 2rem;
+}
+
+.hlavicka li {    
+    display: inline-block;
+    padding: 0 2rem 0 2rem;
+}
+
+.uvod {
+    background-image: url("images/pozadi.jpg");
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: space-around;
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+.uvod p {
+    padding: 0 2rem;
+    font-size: 2rem;
+}
+
+.uvod h1 {
+    font-size: 4rem;
+    padding: 0 2rem;
+    font-weight: normal;
+}
+
+.uvod li {
+    display: inline-block;
+    border: solid 1px white;
+    border-radius: 7px;
+    padding: 1rem;
+}
+
+.uvod a {
+    text-decoration: none;
+    color: white;
+}
+
+.stahnout {
+    background-color: #25133d;
+    margin: 0 2rem 0 0;
+}
+
+.flex-kontejner {
+display: flex;
+margin: 2rem 2rem 3rem 2rem;
+text-align: center;
+}
+
+.nadpis1,
+.nadpis2,
+.nadpis3 {
+    color: #48418e;
+}
+
+.telefon img {
+    height: 320px;
+}
+
+.flex-kontejner img {
+    height: 70px;
+}
+
+.h2 {
+    color: #25133d;
+}
+
+.paticka {
+    background-color: #48418e;
+    color: white;
+    text-align: center;
+    padding: 0.01rem;
+    margin: 0 0 20px 0;
+}
