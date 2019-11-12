@@ -1,0 +1,107 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+ BARVY
+ czechitas  #b92e81
+ pozadi     #bdc3c7
+ tmava      #31363b
+ delitka    #3f464d
+ portfolio  #e74c3c
+ facebook   #3b5998
+ twitter    #1da1f2
+ font-family: 'Montserrat', sans-serif;
+ font-family: 'Source Sans Pro', sans-serif;
+*/
+
+
+body {
+    background-color: #bdc3c7;
+}
+
+.profil {
+    background-color: #31363b;
+    color: grey;
+    width: 250px;
+}
+
+.hlavicka {
+    position: relative;
+}
+
+.hlavicka .foto {
+    width: 100%;
+}
+
+.logo {
+    background-color: #b92e81;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -15px;
+    right: 15px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif; 
+    color: white;
+    font-size: 1.5rem;
+}
+
+.obsah {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.portfolio a:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.facebook a:hover {
+    background-color: #3b5998;
+    color: white;
+}
+
+.twitter a:hover {
+    background-color: #1da1f2;
+    color: white;
+}
+
+.portfolio {
+    width: 100%;   
+}
+
+.facebook,
+.twitter {
+    width: 50%;
+}
+
+.flex-kontejner {
+    display: flex;   
+    flex-wrap: wrap;
+    margin-top: 15px;
+    padding: 0,5rem;
+    border: 0.5px #3f464d;
+    font-family: 'Montserrat', sans-serif;    
+    }
+
+.flex-kontejner > div {
+    display: flex;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #3f464d;
+    text-decoration: none;    
+}
+
+.flex-kontejner a {
+    color: grey;
+    text-decoration: none;
+}
