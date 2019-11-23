@@ -1,0 +1,163 @@
+* {box-sizing: border-box;}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hlavicka {
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    line-height: 2;
+}
+
+h1 {
+    font-size: 3rem;
+    color: rgb(175, 20, 20);
+    text-shadow: 0 3px 10px rgba(243, 239, 239, 0.7)
+}
+
+h2 {
+    font-size: 2rem;
+    color: grey;
+    text-shadow: 0 3px 10px rgba(243, 239, 239, 0.7)  
+}
+
+.seznamknih {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2.5rem 3.5rem 2rem 3.5rem;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    /*height: 430px;*/
+   
+}
+
+.seznamknih img {
+    display: flex;
+    float: right;
+    height: 300px;
+    align-self: flex-end;
+    overflow: hidden;
+    margin-left: auto;
+    position: absolute;
+}
+
+.seznamknih li{
+    display: flex;
+    border-color: rgb(175, 20, 20);
+    border-bottom-style: dotted;
+    width: 300px;
+}
+
+.seznamknih a{
+    color: white;
+    font-style: italic;
+    margin: 6px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    /*padding: 0.5rem 0 0.5rem 0;*/
+}
+
+.seznamknih a:hover {
+    background-color: grey;
+    transform: scale(1.2);
+}
+
+.paticka {
+    font-size: 1.2rem;
+   /* background-color: rgb(156, 156, 156);*/
+    background-color: white;
+    padding: 1.7rem;
+    text-align: center;
+}
+
+.prolog {
+    padding: 2.5rem 25% 2.5rem 25%;
+    font-size: 1.2rem;
+    background-color:white;
+    color: black;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.vyberkapitol {
+    background: black;
+    height: 230px;
+    padding: 2.5rem 25% 2rem 25%;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.vyberkapitol li {
+    display: inline-block;
+    margin: 1rem;  
+}
+
+.vyberkapitol a {
+    color: white;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 6px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    border-color: rgb(175, 20, 20);
+    border-bottom-style: dotted;
+}
+
+.vyberkapitol a:hover {
+    background-color: grey;
+    transform: scale(1.2);
+}
+
+nav {
+    text-align: right;
+    margin: auto 5% auto auto; 
+}
+
+nav a {
+text-decoration: none;
+font-style: italic;
+color: grey;
+transition-property: color background-color;
+transition-duration: 0.5s;
+transition-timing-function: ease-in;
+border-color: rgb(175, 20, 20);
+border-bottom-style: dotted;
+}
+
+nav a:hover {
+    color: black;
+    background-color: grey;
+    transform: scale(1.2);
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+}
+
+/*.hlavnistranka {
+    display: flex;
+    flex-direction: column;
+}*/
+
+@media (max-width: 767px) {
+    .seznamknih img {
+        display:none;
+    }
+
+    /*.hlavnistranka {
+        flex-direction: column;
+    }*/
+}
+
+
