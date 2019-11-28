@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mobilní aplikace</title>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="obal">
+
+            <header class="hlavicka">
+                <p>Super appka</p>
+                <ul>
+                    <li><a href="#">Úžasný design</a></li>
+                    <li><a href="#">Boží funkce</a></li>
+                    <li><a href="#">Zdarma ke stažení</a></li>
+                </ul>
+
+                <button class="tlacitko">Menu</button>
+
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#">
+                        Menu
+                    </a>
+            
+                    <button id="navbarToggler" class="navbar-toggler toggler-example" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div id="navbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Úžasný design</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Boží funkce</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Zdarma ke stažení</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </header>
+
+            <section class="uvod">
+               <div class="text">
+               <h1>Super Appka</h1>
+               <p>Úžasná mobilní aplikace,<br> která Ti změní život.</p> 
+                
+                    <a class="stahnout" href="#">Stáhnout zdarma</a>
+                    <a href="#">Více informací</a>
+                
+                </div>
+                
+                <img class="telefon" src="images/telefon.png"> 
+                
+            </section> 
+            
+            <section class="flex-kontejner">
+                
+                <div class="cestuj">
+                        <img src="images/letadlo.svg">
+                        <h2 class="nadpis1">Cestuj po světě</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla itaque laudantium quod 
+                            dicta quam, delectus unde ducimus ut?</p>
+                </div>
+                
+                <div class="chatuj">
+                        <img src="images/bubliny.svg">
+                        <h2 class="nadpis2">Chatuj s přáteli</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla itaque laudantium quod 
+                                dicta quam, delectus unde ducimus ut?</p>
+                </div>
+
+                <div class="zazij">
+                        <img src="images/mapa.svg">
+                        <h2 class="nadpis3">Zažij dobrodružství</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla itaque laudantium quod 
+                                dicta quam, delectus unde ducimus ut?</p>
+                </div>
+
+            </section>
+
+            <footer class="paticka">
+                <p>©2016, Web od A do Z
+                </p>
+            </footer>
+                        
+        </div>     
+            
+    
+        <script>
+            (function () {
+                
+    
+                let navbarToggler = document.querySelector('#navbarToggler')
+                let navbar = document.querySelector('#navbar')
+    
+                navbarToggler.addEventListener('click', function (e) {
+                    navbar.classList.toggle('menu-show')
+    
+                    console.log('navbar display', getComputedStyle(navbar).display)
+    
+                    e.stopPropagation()
+                })
+    
+                document.addEventListener('click', function () {
+    
+                    navbar.classList.remove('menu-show')
+                })
+    
+                document.addEventListener('keydown', function (e) {
+                    if (e.keyCode === 27) {
+                        // Handle escape on page by hiding the menu
+                        navbar.classList.remove('menu-show')
+                    }
+                })
+    
+            })()
+        </script>
+
+    </body>
+</html>
